@@ -1,18 +1,17 @@
-
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
   };
-
-  return (
-    <footer className="bg-gray-900 text-white py-12">
+  return <footer className="bg-gray-900 text-white py-12">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Brand Section */}
           <div className="text-center md:text-left">
-            <h3 className="text-2xl font-bold gradient-ocean bg-clip-text text-transparent mb-4">
+            <h3 className="text-2xl font-bold gradient-ocean bg-clip-text mb-4 text-transparent">
               Monkey D. Luffy
             </h3>
             <p className="text-gray-400 leading-relaxed">
@@ -25,18 +24,14 @@ const Footer = () => {
           <div className="text-center">
             <h4 className="text-lg font-semibold mb-4">Navigate</h4>
             <div className="space-y-2">
-              {['Home', 'About', 'Skills', 'Services', 'Projects', 'Contact'].map((item) => (
-                <button
-                  key={item}
-                  onClick={() => {
-                    const element = document.getElementById(item.toLowerCase());
-                    if (element) element.scrollIntoView({ behavior: 'smooth' });
-                  }}
-                  className="block mx-auto text-gray-400 hover:text-white transition-colors"
-                >
+              {['Home', 'About', 'Skills', 'Services', 'Projects', 'Contact'].map(item => <button key={item} onClick={() => {
+              const element = document.getElementById(item.toLowerCase());
+              if (element) element.scrollIntoView({
+                behavior: 'smooth'
+              });
+            }} className="block mx-auto text-gray-400 hover:text-white transition-colors">
                   {item}
-                </button>
-              ))}
+                </button>)}
             </div>
           </div>
 
@@ -45,10 +40,7 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Set Sail Together</h4>
             <div className="space-y-2">
               <p className="text-gray-400">Ready for collaboration?</p>
-              <a 
-                href="mailto:monkey.d.luffyxroronoa.zoro05@gmail.com"
-                className="text-ocean-400 hover:text-ocean-300 transition-colors block"
-              >
+              <a href="mailto:monkey.d.luffyxroronoa.zoro05@gmail.com" className="text-ocean-400 hover:text-ocean-300 transition-colors block">
                 monkey.d.luffyxroronoa.zoro05@gmail.com
               </a>
               <p className="text-sm text-gray-500 mt-4">
@@ -73,18 +65,13 @@ const Footer = () => {
           </div>
           
           <div className="text-center mt-6">
-            <button
-              onClick={scrollToTop}
-              className="inline-flex items-center space-x-2 text-ocean-400 hover:text-ocean-300 transition-colors group"
-            >
+            <button onClick={scrollToTop} className="inline-flex items-center space-x-2 text-ocean-400 hover:text-ocean-300 transition-colors group">
               <span>Back to Top</span>
               <span className="group-hover:animate-bounce">⬆️</span>
             </button>
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
