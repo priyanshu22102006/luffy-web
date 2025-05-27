@@ -49,7 +49,7 @@ const HeroSection = () => {
                 <Button onClick={() => scrollToSection('about')} size="lg" className="bg-white text-ocean-600 hover:bg-white/90 transition-all transform hover:scale-105">
                   Discover My Journey
                 </Button>
-                <Button onClick={() => scrollToSection('contact')} size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-ocean-600 transition-all">
+                <Button onClick={() => scrollToSection('contact')} size="lg" variant="outline" className="border-white hover:bg-white transition-all text-orange-500">
                   Join My Crew
                 </Button>
               </div>
