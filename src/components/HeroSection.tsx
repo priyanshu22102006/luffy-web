@@ -13,7 +13,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 gradient-ocean opacity-90"></div>
       
       {/* Animated background elements */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 bg-indigo-500">
         <div className="absolute top-20 left-10 w-32 h-32 bg-white/10 rounded-full animate-float"></div>
         <div className="absolute bottom-20 right-20 w-24 h-24 bg-sunset-400/20 rounded-full animate-float" style={{
         animationDelay: '1s'
