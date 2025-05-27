@@ -60,7 +60,7 @@ const HeroSection = () => {
           <div className="lg:w-1/2 flex justify-center">
             <div className="relative">
               <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-8 border-white/20 shadow-2xl animate-float">
-                <img src="https://images.unsplash.com/photo-1501286353178-1ec881214838?w=400&h=400&fit=crop&crop=center" alt="Monkey D. Luffy - Adventurous spirit" className="w-full h-full object-fill" />
+                <img alt="Monkey D. Luffy - Adventurous spirit" src="/lovable-uploads/50b22e40-d702-47b9-b6fe-af63cab0ab74.jpg" className="w-full h-full object-cover" />
               </div>
               
               {/* Decorative elements */}
