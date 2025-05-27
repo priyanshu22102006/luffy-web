@@ -30,7 +30,7 @@ const HeroSection = () => {
             <div className="animate-fade-in-up">
               <h1 className="text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight">
                 Monkey D. 
-                <span className="block gradient-sunset bg-clip-text text-lime-400">
+                <span className="block gradient-sunset bg-clip-text text-lime-400 font-normal">
                   Luffy
                 </span>
               </h1>
