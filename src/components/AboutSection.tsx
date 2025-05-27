@@ -1,9 +1,6 @@
-
 import { Card, CardContent } from '@/components/ui/card';
-
 const AboutSection = () => {
-  return (
-    <section id="about" className="py-20 bg-gray-50">
+  return <section id="about" className="py-20 bg-gray-50">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
@@ -14,15 +11,11 @@ const AboutSection = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 items-center mx-0 px-0">
           {/* Left side - Image */}
           <div className="relative">
             <div className="w-full h-96 rounded-2xl overflow-hidden shadow-2xl">
-              <img 
-                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=400&fit=crop"
-                alt="Student workspace"
-                className="w-full h-full object-cover"
-              />
+              <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=400&fit=crop" alt="Student workspace" className="w-full h-full object-cover" />
             </div>
             <div className="absolute -bottom-6 -right-6 w-32 h-32 gradient-ocean rounded-2xl opacity-80"></div>
           </div>
@@ -66,7 +59,7 @@ const AboutSection = () => {
             </Card>
 
             <div className="grid md:grid-cols-3 gap-4">
-              <Card className="text-center p-4 hover:shadow-lg transition-shadow">
+              <Card className="text-center p-4 hover:shadow-lg transition-shadow px-[16px]">
                 <CardContent className="p-4">
                   <div className="text-3xl mb-2">🚀</div>
                   <h5 className="font-semibold text-gray-800">Ambitious</h5>
@@ -93,8 +86,6 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AboutSection;
