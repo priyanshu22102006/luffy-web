@@ -40,8 +40,8 @@ const Navigation = () => {
   }];
   return <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/90 backdrop-blur-md shadow-lg' : 'bg-transparent'}`}>
       <div className="container mx-auto px-6 py-4">
-        <div className="flex items-center justify-between">
-          <div className="text-2xl font-bold gradient-ocean bg-clip-text text-transparent bg-yellow-400">
+        <div className="flex items-center justify-between bg-transparent">
+          <div className="text-2xl font-bold gradient-ocean bg-clip-text text-transparent bg-transparent">
             Monkey D. Luffy
           </div>
           
