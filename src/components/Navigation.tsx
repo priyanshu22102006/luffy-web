@@ -46,7 +46,7 @@ const Navigation = () => {
           </div>
           
           <div className="hidden md:flex items-center space-x-8">
-            {navItems.map(item => <button key={item.id} onClick={() => scrollToSection(item.id)} className={`transition-colors duration-200 hover:text-ocean-600 ${activeSection === item.id ? 'text-ocean-600 font-semibold' : 'text-gray-700'}`}>
+            {navItems.map(item => <button key={item.id} onClick={() => scrollToSection(item.id)} className="">
                 {item.label}
               </button>)}
           </div>
